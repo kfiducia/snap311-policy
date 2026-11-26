@@ -1,6 +1,6 @@
 # Snap311 Privacy Policy
 
-_Last updated: June 16, 2026_
+_Last updated: November 25, 2026_
 
 Snap311 ("the app") is an independent, unofficial mobile client for filing
 service requests with the District of Columbia 311 system. The app is not
@@ -17,7 +17,9 @@ app work reliably:
   `dc311-api.herokuapp.com` only when you submit a report.
 - **Address and location data** for the report you're filing. Extracted from
   the GPS in your chosen photo's EXIF metadata, or typed by you, or picked on
-  a map. Sent to DC's 311 API as part of the report.
+  a map. Sent to DC's 311 API as part of the report. To find the street
+  address for that spot, the app may also send its coordinates to DC's public
+  map service (see **Third parties** below).
 - **Photos you choose to attach.** Uploaded to DC's official 311 worker at
   `dc311-api-worker.herokuapp.com`, which stores them in DC's Salesforce
   system as part of the service request.
@@ -45,6 +47,19 @@ When you submit a report, the data you've entered is sent to:
   data is governed by DC government policy.
 - **DC's official 311 worker** (`dc311-api-worker.herokuapp.com`) — for photo
   attachments, stored in DC's Salesforce.
+
+When you set a report's location, or open a report in Explore:
+
+- **DC GIS map service** (`maps2.dcgis.dc.gov`) — the District of Columbia's
+  public map service. When you set a report's location in DC,
+  from a photo's location or by placing a pin on the map, and DC 311's own
+  address lookup can't find a street address close to that spot, the app sends
+  the spot's latitude and longitude to DC GIS to look up the address of the
+  property there. Only the coordinates are sent: no name, contact info or
+  photo. The app also asks DC GIS for the public details of a 311 report when
+  you open one in Explore; only that report's number is sent. DC GIS is run by
+  the DC government, and its handling of these requests is governed by DC's
+  own policies (see https://dc.gov/page/privacy-and-security).
 
 If you opt in (or leave on by default) to diagnostics:
 
