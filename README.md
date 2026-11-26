@@ -1,6 +1,6 @@
 # Snap311 Privacy Policy
 
-_Last updated: November 25, 2026_
+_Last updated: November 26, 2026_
 
 Snap311 ("the app") is an independent, unofficial mobile client for filing
 service requests with the District of Columbia 311 system. The app is not
@@ -85,7 +85,8 @@ report (Ward / ANC / SMD)**. It's available for DC reports only. When it's on:
   are built from DC's public 311 data. The app doesn't send your reports or
   your location to get them.
 - **Everything stays on your device.** Your reports' districts and your
-  district totals are stored only on your phone.
+  district totals are stored only on your phone. Turning the feature off
+  deletes them, along with the downloaded district map.
 
 Like any download from the internet, these requests let the site serving them
 (`snap311.app`, or GitHub for `kfiducia.github.io`) see your device's IP
