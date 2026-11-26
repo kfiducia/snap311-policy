@@ -67,9 +67,35 @@ If you opt in (or leave on by default) to diagnostics:
   did right before the error. API keys are scrubbed before send. Personal
   info (name, email, contact info) is never sent. You can disable any time.
 
+## Optional: Track where you report (Ward / ANC / SMD)
+
+This feature is off unless you turn it on in **Settings → Track where you
+report (Ward / ANC / SMD)**. It's available for DC reports only. When it's on:
+
+- **The app downloads a map of DC's district boundaries** (Wards, Advisory
+  Neighborhood Commissions and Single Member Districts) from Snap311's website,
+  `snap311.app`.
+- **Your reports' districts are worked out on your phone.** The app checks
+  each report's location against that downloaded map to find its Ward, ANC and
+  Single Member District. Your reports' locations are not sent anywhere for
+  this.
+- **To show your share of the 311 reports in your district**, the app
+  downloads public 311 totals for each district from Snap311's public data
+  site (`kfiducia.github.io/dc311-data`, hosted on GitHub Pages). These totals
+  are built from DC's public 311 data. The app doesn't send your reports or
+  your location to get them.
+- **Everything stays on your device.** Your reports' districts and your
+  district totals are stored only on your phone.
+
+Like any download from the internet, these requests let the site serving them
+(`snap311.app`, or GitHub for `kfiducia.github.io`) see your device's IP
+address. No report details, location or contact info are included.
+
 ## Your choices
 
 - **Disable diagnostics**: Settings → Send diagnostics → off.
+- **Turn off district tracking**: Settings → Track where you report (Ward /
+  ANC / SMD) → off.
 - **Remove your saved info**: Delete the app. Local storage is erased with
   the app on iOS.
 - **Remove a submitted report**: Snap311 can't do this — submissions live in
